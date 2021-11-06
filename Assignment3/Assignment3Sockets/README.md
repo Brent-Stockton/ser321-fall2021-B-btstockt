@@ -3,6 +3,9 @@ TCP: gradle RunServer, gradle runClient
 UDP: gradle UDPServer, gradle UDPClient
 Default port of 8080 and host "localhost"
 
+
+Youtube Video Link: https://youtu.be/TzFIE7BeKKI
+
 Description:
 
 This project is a picture guessing game where the server first requests the clients name and number of games, then sends a partial picture over to the 
