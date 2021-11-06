@@ -1,3 +1,7 @@
+TO RUN PROGRAM ---
+TCP: gradle RunServer, gradle runClient
+UDP: gradle UDPServer, gradle UDPClient
+
 Description:
 
 This project is a picture guessing game where the server first requests the clients name and number of games, then sends a partial picture over to the 
@@ -12,3 +16,4 @@ The client was able to then guess and the server processed the client response. 
 the whole picture was given. At anytime if the user guessed the picture, the server sent an image of YOU WIN! and they game was completed.
 
 Protocol:
+
