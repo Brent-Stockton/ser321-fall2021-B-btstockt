@@ -115,7 +115,7 @@ public class Server {
           String msgFromClient = bufferedReader.readLine();
           System.out.println("Client: " + msgFromClient);
           p.println("Msg Received: Hello " + msgFromClient +
-                  ". Please Enter the number of pictures you would like to see..");
+                  ". Please Enter the number of games you would like to play..");
 
           //Server receives number and asks number user to start or quit
           String sNum;
@@ -123,7 +123,7 @@ public class Server {
           int intNum = Integer.parseInt(sNum);
           System.out.println("Client: " + intNum);
           p.println("Msg Received: Okay " + msgFromClient + ". You would like to play "
-                  + intNum + " games. Please type \"Start\" to begin or type \"quit\"" +
+                  + intNum + " game(s). Please type \"Start\" to begin or type \"quit\"" +
                   "to exit the game.");
 
          //Server receives string to determine to start
@@ -145,6 +145,17 @@ public class Server {
                     if(FromClient.equalsIgnoreCase("car")) {
                         sendImage("Image2","img/winner.png", p,
                                socket, bufferedReader);
+                        try {
+                            TimeUnit.SECONDS.sleep(1);
+                        }
+                        catch (Exception e) {
+                            System.out.println("Oops! Something went wrong!");
+                        }
+                        socket.close();
+                        inputStreamReader.close();
+                        outputStreamWriter.close();
+                        bufferedReader.close();
+                        bufferedWriter.close();
 
 
                     } else if(FromClient.equalsIgnoreCase("more")){
@@ -160,6 +171,17 @@ public class Server {
                     if(FromClient2.equalsIgnoreCase("car")) {
                         sendImage("Image3","img/winner.png", p,
                                 socket, bufferedReader);
+                        try {
+                            TimeUnit.SECONDS.sleep(1);
+                        }
+                        catch (Exception e) {
+                            System.out.println("Oops! Something went wrong!");
+                        }
+                        socket.close();
+                        inputStreamReader.close();
+                        outputStreamWriter.close();
+                        bufferedReader.close();
+                        bufferedWriter.close();
 
                     } else if(FromClient2.equalsIgnoreCase("more")){
                         sendImage("Image3","img/car/car3.png", p,
@@ -175,6 +197,18 @@ public class Server {
                     if(FromClient3.equalsIgnoreCase("car")) {
                         sendImage("Image4","img/winner.png", p,
                                 socket, bufferedReader);
+                        try {
+                            TimeUnit.SECONDS.sleep(1);
+                        }
+                        catch (Exception e) {
+                            System.out.println("Oops! Something went wrong!");
+                        }
+
+                        socket.close();
+                        inputStreamReader.close();
+                        outputStreamWriter.close();
+                        bufferedReader.close();
+                        bufferedWriter.close();
                     }
                     else{
                         p.println("Msg Received: Sorry you wrong answer!");

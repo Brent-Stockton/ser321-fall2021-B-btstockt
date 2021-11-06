@@ -24,7 +24,7 @@ public class Client {
       JFrame jFrame = new JFrame("Client");
       jFrame.setSize(900,700);
       jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      JLabel jLabelText = new JLabel("Waiting for image form server");
+      JLabel jLabelText = new JLabel("Waiting for image from server");
 
       jFrame.add(jLabelText, BorderLayout.SOUTH);
       jFrame.setVisible(true);
