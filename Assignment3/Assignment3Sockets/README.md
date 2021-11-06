@@ -6,6 +6,8 @@ Default port of 8080 and host "localhost"
 
 Youtube Video Link: https://youtu.be/TzFIE7BeKKI
 
+TCP PROJECT:
+
 Description:
 
 This project is a picture guessing game where the server first requests the clients name and number of games, then sends a partial picture over to the 
@@ -27,4 +29,21 @@ In the happy scenario, after the client is sent the picture snippert, the client
 
 Code Robustness:
 While my code was not extremely robust as I have not coded in Java in a long time (a lot of c), I did impliment try/catch blocks with exceptions and tried to account for different inputs where I could figure out how to impliment them. If I could go back I would have more carefully designed my program as I ran into a lot of road blocks and challenges but tried to put together the best result I could muster in the time I had.
+
+UDP PROJECT:
+
+Description:
+
+This project is a short implementation of the game. When the clients starts up it should connect to the Server, the server will reply by asking for the name of the player. The client should send their name and the server should receive it and greet the client by name and ask for the number of "questions" (differnt pictures) the client wants to try to answer correctly in time.
+The client should enter a number. This number represents the number of images the client wants to guess. The server should use that number and the previous client name to tell them they are ready to play. If the number is larger than the number of images the server knows an appropriate response should be send back and it should be handles in a good way. The server will then send over a part of an image (display this either in the UI or in a pop up frame.
+
+I was able to succesfully run the client and server and prompt the client to enter their name. Once the name was enter the server then sent the name over to the server and the server recieved the name.
+
+
+
+Protocol:
+Client and Sever both create Sockets respectively using datagram sockets. Client is greeted with a Welcome message and asked for their name. The client responds using a scanner class and the string is converted to bytes and sent via datagram packet to the server where the server reccieved the byte and interprets the message using a datagram packet.
+
+Code Robustness:
+Because my code was short their were not many places to create code robustness. I used a throw IO exception for main but did not have much to error check etc.
 
