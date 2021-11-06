@@ -1,0 +1,55 @@
+// set as java application
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+   // https://mvnrepository.com/artifact/org.json/json
+compile group: 'org.json', name: 'json', version: '20200518'
+}
+
+
+//define main class
+mainClassName = 'Concentration'
+
+task runServer(type: JavaExec) {
+  group 'tcp'
+  description 'Runs server for game'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'assignment3.tcp.Server'
+  standardInput = System.in
+}
+
+task runClient(type: JavaExec) {
+  group 'tcp'
+  description 'Client plays game fed by server'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'assignment3.tcp.Client'
+  standardInput = System.in
+}
+
+task UDPServer(type: JavaExec) {
+  group 'udp'
+  description 'Server is sent message from client and responds'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'assignment3.udp.Server'
+  standardInput = System.in
+}
+
+task UDPClient(type: JavaExec) {
+  group 'udp'
+  description 'Client sends message to server'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'assignment3.udp.Client'
+  standardInput = System.in
+}
