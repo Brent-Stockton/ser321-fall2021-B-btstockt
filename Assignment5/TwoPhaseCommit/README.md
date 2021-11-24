@@ -28,7 +28,7 @@ Should give good error message if something goes wrong which explains what went 
 ### Terminal
 Base Code, please use the following commands:
 ```
-  For Server, run "gradle runThreadedServer -Pport=8000 -q --console=plain" //TC connected to server
+For Server, run "gradle runThreadedServer -Pport=8000 -q --console=plain" //TC connected to server
 ```
   ```
   For Nodes, run "gradle Node1 --console=plain, gradle Node2  --console=plain
