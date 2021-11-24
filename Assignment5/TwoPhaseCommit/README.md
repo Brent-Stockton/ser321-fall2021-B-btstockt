@@ -1,6 +1,6 @@
-# Assignment 4 Activity 1
+# Assignment 5 Activity 2 Two Phase Commit
 ## Description
-The initail Performer code only has one function for adding strings to an array: 
+Program displays a client menu to either add a tip for SER321, Display a list for Ser321 or quit. Depending on client choice the client will connect to a server that connects to a transaction coordinator that will ask two nodes for permission to complete the client request. If both nodes agree the request will be fulfilled and displayed to the client. If both or one node decides to abort the client request will not be fullfilled and the client will be notified. If the client decides to quit the socket will be closed but the server will remain running. Program handles multiple clients on athreaded server and they will be able to view a global list of tips from all clients.
 
 ## Protocol
 
