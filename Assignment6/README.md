@@ -2,7 +2,11 @@ PROJECT DESCRIPTION:
 
 Here is a link to my code and video demo of the following services: https://www.youtube.com/watch?v=-1N0WnwNZlU
 
-To run this decription use gradle runNode and gradle runClientJava
+To run this program use:
+gradle runNode --console=plain
+gradle runClientJava --console=plain
+
+This program uses a combination of "yes," "no," "quit," and integer inputs to work the program. Menu clearly explains.
 
 In the assignment I was able to implement three diffrent gRPC services. Two were partially given as choices and one I was able to design on my own.
 I was able to implement the Calculation Service, Story Service, and self designed Covid-19 Self-Checker Service. The program iniates with a main menu giving 4 options for the client to choose from.
