@@ -1,10 +1,6 @@
-GRPC Services and Registry
-The following folder contains a Registry.jar which includes a Registering service where Nodes can register to allow clients to find them and use their implemented GRPC services.
-
+PROJECT DESCRIPTION:
 
 Here is a link to my code and video demo of the following services: https://www.youtube.com/watch?v=-1N0WnwNZlU
-
-PROJECT DESCRIPTION:
 
 To run this decription use gradle runNode and gradle runClientJava
 
@@ -29,6 +25,9 @@ The story service saves a story that the client creates sentence by sentence and
 
 Covid-19 Self Checker Service:
 This service provides the client with a list of CDC questions and asseses if you either need immediate medical attention due to your symptoms or can merely schedule and appointment with a primary care physician for further review. One this option is chosen the client is given and menu with 3 options provided. The first option is the self-check survey. This option will prompt you to receive 10 symptom checking questions that they can answer "yes" or "no" to. If they answer  five "yes" answers to any of the questions before the list is complete they will be prompted to seek immediate medical attention. If the client reaches the end of the question list without 5 "yes" answers they will be prompted to seek a primary care physician appointment for further review. The second option on the menu is to view a sample of common survey questions. After choosing this option the client will be promted to enter a desired number of survey questions less than the list and will be given that number of sample questions. They will then be given the option to do another query or return to the menu. The final choice is to review the entire list of survey questions. Once this option is chosen the client will be sent the list of question to review. They are then able to quit and return to the main menu.
+
+GRPC Services and Registry
+The following folder contains a Registry.jar which includes a Registering service where Nodes can register to allow clients to find them and use their implemented GRPC services.
 
 Before starting do a "gradle generateProto".
 
